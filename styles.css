@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+/*font-family: 'Rye', cursive;*/
+
+body{
+    background: linear-gradient(180deg, #C70100 0%, #F54A02 78.82%, #C70100 100%);
+    font-family: 'Rye', cursive;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBanner{
+    width: 90vw;
+    height: auto;
+}
