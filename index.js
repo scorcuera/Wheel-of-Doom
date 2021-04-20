@@ -1,3 +1,11 @@
 import { codersList } from "./data.js";
 
-alert("hola")
+console.log(codersList[2].name)
+
+codersList.forEach(item =>{
+
+})
+
+for(i=0; i<codersList.length; i++){
+  
+}
