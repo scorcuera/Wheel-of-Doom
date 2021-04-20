@@ -1,126 +1,126 @@
 export const codersList = [{
         name: 'Andrea',
         id: 1,
-        img: URL("./img/freak01.png"),
+        img: './img/freak01.png'
     },
     {
         name: 'Sergio',
         id: 2,
-        img: URL(),
+        img: './img/freak02.png'
     },
     {
         name: 'Joan',
-        id: 3
-        img: URL()
+        id: 3,
+        img: './img/freak03.png'
     },
     {
         name: 'Andriu',
         id: 4,
-        img: URL(),
+        img: './img/freak04.png'
     },
     {
         name: 'Gabi',
         id: 5,
-        img: URL(),
+        img: './img/freak05.png'
     },
     {
         name: 'Alexandra',
         id: 6,
-        img: URL(),
+        img: './img/freak06.png'
     },
     {
         name: 'Jose Miguel',
         id: 7,
-        img: URL(),
+        img: './img/freak07.png'
     },
     {
         name: 'Martín',
         id: 8,
-        img: URL(),
+        img: './img/freak08.png'
     },
     {
         name: 'Diego',
         id: 9,
-        img: URL(),
+        img: './img/freak09.png'
     },
     {
         name: 'Berta',
         id: 10,
-        img: URL(),
+        img: './img/freak10.png'
     },
     {
         name: 'Jael',
         id: 11,
-        img: URL(),
+        img: './img/freak11.png'
     },
     {
         name: 'Anya',
         id: 12,
-        img: URL(),
+        img: './img/freak12.png'
     },
     {
         name: 'Leah',
         id: 13,
-        img: URL(),
+        img: './img/freak13.png'
     },
     {
         name: 'Thierno',
         id: 14,
-        img: URL(),
+        img: './img/freak14.png'
     },
     {
         name: 'Cris',
         id: 15,
-        img: URL(),
+        img: './img/freak01.png'
     },
     {
         name: 'Solomon',
         id: 16,
-        img: URL(),
+        img: './img/freak02.png'
     },
     {
         name: 'Snezhana',
         id: 17,
-        img: URL(),
+        img: './img/freak03.png'
     },
     {
         name: 'El Hermoso',
         id: 18,
-        img: URL(),
+        img: './img/freak04.png'
     },
     {
         name: 'David',
         id: 19,
-        img: URL(),
+        img: './img/freak05.png'
     },
     {
         name: 'Abdulha',
         id: 20,
-        img: URL(),
+        img: './img/freak06.png'
     },
     {
         name: 'Andrés',
         id: 21,
-        img: URL(),
+        img: './img/freak07.png'
     },
     {
         name: 'Armando',
         id: 22,
-        img: URL(),
+        img: './img/freak08.png'
     },
     {
         name: 'Gabriela',
         id: 23,
-        img: URL(),
+        img: './img/freak09.png'
     },
     {
         name: 'Franco',
         id: 24,
-        img: URL(),
+        img: './img/freak10.png'
     },
     {
         name: 'Amr',
         id: 25,
-        img: URL(),
-    },
+        img: './img/freak11.png'
+    }
 ]

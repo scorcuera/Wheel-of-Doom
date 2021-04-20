@@ -11,9 +11,30 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .imgBanner{
-    width: 90vw;
+    width: 98vw;
     height: auto;
+}
+
+h1{
+    position: absolute;
+    top: 25%;
+}
+
+.ctCoders{
+    display: flex;
+    width: 65px;
+    height: 104px;
+    position: relative;
+}
+
+.freakCoder{
+    position: absolute;
+}
+
+.stage{
+    position: absolute;
 }
