@@ -1,11 +1,12 @@
 import { codersList } from "./data.js";
 
-console.log(codersList[2].name)
 
-codersList.forEach(item =>{
+for(let i=0; i<codersList.length; i++){
+  console.log(codersList[i].name)
+} 
 
-})
-
-for(i=0; i<codersList.length; i++){
-  
+codersList.sort(function() { 
+  return Math.random((codersList.name) - 0.5)
 }
+  
+    console.log(sort)

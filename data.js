@@ -1,4 +1,5 @@
-export const codersList = [{
+export const codersList = [
+    {
         name: 'Andrea',
         id: 1,
         img: './img/freak01.png'
