@@ -7,6 +7,7 @@ for(let i=0; i<codersList.length; i++){
 
 codersList.sort(function() { 
   return Math.random((codersList.name) - 0.5)
-}
+
+})
   
-    console.log(sort)
+    
