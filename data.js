@@ -84,7 +84,7 @@ export const codersList = [{
         img: './img/freak03.png'
     },
     {
-        name: 'El Hermoso',
+        name: 'David El Hermoso',
         id: 18,
         img: './img/freak04.png'
     },
@@ -123,4 +123,4 @@ export const codersList = [{
         id: 25,
         img: './img/freak11.png'
     }
-]
+];
