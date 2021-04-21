@@ -6,20 +6,27 @@ function oscurecerRandom(array){
   btMatar.addEventListener("click", () =>{
     let random = Math.floor(Math.random()* array.length)
     let randomId = array[random].id
+    
+    let contenedores = document.querySelectorAll(".ctCoders")
+    let randomDataset= contenedores[random].dataset.set
 
-    let codersPrinted = "";
     array.forEach(item => {
+      
         if(item.id == randomId){
-        codersPrinted += `<div class="ctCoders" data-set="${item.id}"><h2>${item.name}</h2>
-    <img src="${item.img}" alt="freakCoder" class="freakCoder">
-    <img src="img/telonCoders.jpg" alt="stage" class="stage"></div>`
+        
+          contenedores[randomId].classList.add('ctCodersSelected');
+          array.splice(randomId, 1)
+          console.log(array);
+          
       }
     });
-    document.querySelector(".ctFichas").innerHTML = codersPrinted;
+    
   })
 }
 
 oscurecerRandom(codersList);
+
+
 
 
 

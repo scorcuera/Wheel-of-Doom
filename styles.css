@@ -45,6 +45,10 @@ h1 {
     margin: 1%;
 }
 
+.ctCodersSelected {
+    filter: brightness(50%);
+}
+
 h2 {
     position: absolute;
     z-index: 2;
