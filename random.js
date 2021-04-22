@@ -18,6 +18,7 @@ btMatar.addEventListener("click", () =>{
         console.log(array)
         console.log(genesisArray);
         contenedores[randomId].classList.add('ctCodersSelected');
+        contenedores[randomId].classList.add('ctCodersBig', 'stageBig');
       
   };
 });
