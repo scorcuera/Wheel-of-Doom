@@ -2,7 +2,40 @@ import { codersList } from "./data.js";
 
 let btMatar= document.querySelector(".btMatar")
 
+
+
+
 function oscurecerRandom(array){
+  btMatar.addEventListener("click", () => {
+    let random = Math.floor(Math.random() * array.length)
+    let randomId = array[random].id
+    console.log(array[randomId]);
+   
+    
+    array.map(coder =>{
+
+      if(coder.id == randomId){
+        let indice = array.indexOf()
+        array.splice(, 1)
+        console.log(array);
+      }
+      
+      
+    })
+  })
+} 
+
+
+oscurecerRandom(codersList)
+
+
+
+
+
+
+
+
+/* function oscurecerRandom(array){
   btMatar.addEventListener("click", () =>{
     let random = Math.floor(Math.random()* array.length)
     let randomId = array[random].id
@@ -22,27 +55,4 @@ function oscurecerRandom(array){
     });
     
   })
-}
-
-oscurecerRandom(codersList);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-//Funcion para seleccionar aleatoriamente un elemento  
-let random = Math.floor(Math.random() * codersList.length)
-  console.log(codersList[random].name)
- */
-  
+} */
