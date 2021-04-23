@@ -50,6 +50,13 @@ h1 {
     filter: brightness(50%);
 }
 
+.ctCodersBig {
+    position: absolute;
+    z-index: 1;
+    width: 80vw;
+    height: 100vh;
+}
+
 h2 {
     position: absolute;
     z-index: 2;
@@ -69,6 +76,13 @@ h2 {
     position: absolute;
     width: 15vw;
     height: auto;
+}
+
+.stageBig {
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    justify-content: center;
 }
 
 footer {
