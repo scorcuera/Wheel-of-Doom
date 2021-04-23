@@ -1,24 +1,6 @@
 import { codersList } from "./data.js";
 
-<<<<<<< HEAD
-//Funcion para seleccionar aleatoriamente un elemento  
-//let random = Math.floor(Math.random() * codersList.length)
-//console.log(codersList[random].name)
 
-
-
-
-
-
-=======
-  
-<<<<<<< HEAD
- 
- 
-=======
->>>>>>> bcbc3a2216673e87ec297e353ff19a0685e3b6eb
->>>>>>> db2fa49e31a76f6f3023dbd009f874d150f9d7d1
-//Funcion para traer las imagenes y nombres 
 function printCoders(array) {
     let codersPrinted = "";
     array.forEach(item => {
@@ -30,15 +12,6 @@ function printCoders(array) {
     document.querySelector(".ctFichas").innerHTML = codersPrinted;
 };
 
-<<<<<<< HEAD
-printCoders(codersList);
-=======
 printCoders(codersList);
 
-export {printCoders}
-
-<<<<<<< HEAD
-
-=======
->>>>>>> bcbc3a2216673e87ec297e353ff19a0685e3b6eb
->>>>>>> db2fa49e31a76f6f3023dbd009f874d150f9d7d1
+export { printCoders };
