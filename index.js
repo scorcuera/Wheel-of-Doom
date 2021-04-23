@@ -15,5 +15,5 @@ function printCoders(array) {
 
 printCoders(codersList);
 
-
+export {printCoders}
 
