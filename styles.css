@@ -22,7 +22,7 @@ header {
 
 h1 {
     position: absolute;
-    font-size: 1.2rem;
+    font-size: 5.2vw;
     top: 25%;
 }
 
@@ -34,15 +34,27 @@ h1 {
     align-items: center;
     width: 100vw;
     height: 70vh;
+    overflow: scroll;
 }
 
 .ctCoders {
     display: flex;
-    width: 65px;
-    height: 104px;
+    width: 15vw;
+    height: auto;
     position: relative;
     justify-content: center;
-    margin: 1%;
+    margin: 1% 1% 25% 1%;
+}
+
+.ctCodersSelected {
+    filter: brightness(50%);
+}
+
+.ctCodersBig {
+    position: absolute;
+    z-index: 1;
+    width: 80vw;
+    height: 100vh;
 }
 
 .ctCodersSelected {
@@ -52,22 +64,29 @@ h1 {
 h2 {
     position: absolute;
     z-index: 2;
-    font-size: 0.4rem;
-    top: 6%;
+    font-size: 1.5vw;
+    top: 0.5vh;
 }
 
 .freakCoder {
     position: absolute;
     width: 75%;
     height: auto;
-    top: 25%;
+    top: 5vw;
     z-index: 1;
 }
 
 .stage {
     position: absolute;
-    width: 65px;
+    width: 15vw;
     height: auto;
+}
+
+.stageBig {
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    justify-content: center;
 }
 
 footer {
