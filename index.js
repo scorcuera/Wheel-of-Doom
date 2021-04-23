@@ -1,6 +1,6 @@
 import { codersList } from "./data.js";
 
-  
+
 //Funcion para traer las imagenes y nombres 
 function printCoders(array) {
     let codersPrinted = "";
@@ -15,5 +15,4 @@ function printCoders(array) {
 
 printCoders(codersList);
 
-export {printCoders}
-
+export { printCoders }
