@@ -18,7 +18,7 @@ function oscurecerRandom(array) {
                 console.log(array)
 
                 contenedores[randomId].classList.add('ctCodersSelected');
-                contenedores[randomId].classList.add('ctCodersBig', 'stageBig');
+                /* contenedores[randomId].classList.add('ctCodersBig', 'stageBig'); */
 
             };
         });
@@ -27,25 +27,3 @@ function oscurecerRandom(array) {
 
 
 oscurecerRandom(codersList)
-
-
-
-
-
-
-
-
-
-
-
-
-
-function oscurecerRandom(array) {
-    btMatar.addEventListener("click", () => {
-                let random = Math.floor(Math.random() * array.length)
-                let randomId = array[random].id;
-
-                let contenedores = document.querySelectorAll(".ctCoders")
-                let randomDataset = contenedores[random].dataset.set
-
-                array.map(item => {
