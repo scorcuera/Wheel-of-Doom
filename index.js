@@ -1,11 +1,6 @@
 import { codersList } from "./data.js";
 
   
-<<<<<<< HEAD
- 
- 
-=======
->>>>>>> bcbc3a2216673e87ec297e353ff19a0685e3b6eb
 //Funcion para traer las imagenes y nombres 
 function printCoders(array) {
     let codersPrinted = "";
@@ -22,7 +17,3 @@ printCoders(codersList);
 
 export {printCoders}
 
-<<<<<<< HEAD
-
-=======
->>>>>>> bcbc3a2216673e87ec297e353ff19a0685e3b6eb
