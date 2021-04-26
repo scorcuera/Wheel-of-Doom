@@ -4,20 +4,20 @@ import { codersList } from "./data.js";
 let btMatar = document.querySelector(".btMatar");
 let contenedores = document.querySelectorAll(".ctCoders");
 
+btMatar.addEventListener("click", () =>{
+    for (let i = 0; i < 10; i++) {
+    setTimeout( function(){
+        darkenCoder(codersList);
+    }, 200 * i)
+   
+    }
+    
+});
+
 
 function darkenCoder(array) {
-    let x = 0;
-    while (x < 10) {
-        let random = Math.floor(Math.random() * array.length);
-        array.forEach(coder => {
-            console.log(coder.name)
-        })
-    }
-    for (let i = 0; i < 10; i++) {
-        x++;
-    }
-
-
+    let random = Math.floor(Math.random() * array.length);
+    console.log(array[random].name);
 };
 
 
@@ -55,15 +55,3 @@ function chooseCoder(array) {
 };
 */
 
-
-function kill(array) {
-    btMatar.addEventListener("click", () => {
-        darkenCoder(array);
-        //chooseCoder(array);
-    });
-};
-
-
-
-
-kill(codersList);
