@@ -13,10 +13,8 @@ function oscurecerRandom(array) {
         console.log(contenedores[randomId])
         
         contenedorKilled.classList.add('ctCodersBig')
-        
-       
-       
-        
+              
+              
         array.map(item => {
             if (item.id == randomId) {
                 let indice = array.indexOf(item)
