@@ -6,19 +6,33 @@ let contenedores = document.querySelectorAll(".ctCoders");
 
 
 function darkenCoder(array) {
-    let x = 0;
-    while (x < 10) {
-        let random = Math.floor(Math.random() * array.length);
-        array.forEach(coder => {
-            console.log(coder.name)
-        })
-    }
-    for (let i = 0; i < 10; i++) {
-        x++;
-    }
+    let random = Math.floor(Math.random() * array.length);
+    let randomId = array[random].id;
 
+    array.find(item => {
+        if (item.id == randomId) {
+            contenedores[randomId].classList.add('ctCodersSelected');
+        }
+    });
+
+    for (let i = 0; i < 5; i++) {
+        doRandom(array[i]);
+        break;
+    }
 
 };
+
+
+
+
+
+function doRandom() {
+    setInterval(darkenCoder, 1000);
+}
+
+
+
+
 
 
 
