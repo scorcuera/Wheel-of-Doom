@@ -18,13 +18,17 @@ function oscurecerRandom(array) {
                 console.log(array)
 
                 contenedores[randomId].classList.add('ctCodersSelected');
-                /* contenedores[randomId].classList.add('ctCodersBig', 'stageBig'); */
+
+                let ficha = document.getElementById("ctFichasBig");
+
+                function mostrarKilledCoder() {
+                    console.log("ctFichasBig");
+                    ficha.style.display = "flex";
+                }
 
             };
         });
     });
 };
 
-
 oscurecerRandom(codersList)
-console.log(ctCodersBig)
