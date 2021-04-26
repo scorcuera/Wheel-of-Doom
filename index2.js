@@ -1,3 +1,4 @@
+
 let ficha = document.getElementById("ctFichas");
 
 function mostrarKilledCoder() {

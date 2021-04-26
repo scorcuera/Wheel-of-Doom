@@ -3,6 +3,7 @@ import { codersList } from "./data.js";
 let btMatar = document.querySelector(".btMatar")
 
 
+
 function oscurecerRandom(array) {
     btMatar.addEventListener("click", () => {
         let random = Math.floor(Math.random() * array.length)
@@ -27,4 +28,6 @@ function oscurecerRandom(array) {
 
 
 oscurecerRandom(codersList)
-console.log(ctCodersBig)
+
+
+
