@@ -21,7 +21,6 @@ function oscurecerRandom(array) {
 
                 let ficha = document.getElementById("ctFichasBig");
 
-                function mostrarKilledCoder() {
                     console.log("ctFichasBig");
                     ficha.style.display = "flex";
                 }
