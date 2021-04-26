@@ -10,6 +10,7 @@ function oscurecerRandom(array) {
         let randomId = array[random].id;
 
         let contenedores = document.querySelectorAll(".ctCoders")
+        console.log(contenedores[randomId])
 
         array.map(item => {
             if (item.id == randomId) {
@@ -19,17 +20,22 @@ function oscurecerRandom(array) {
                 console.log(array)
 
                 contenedores[randomId].classList.add('ctCodersSelected');
-
-                let ficha = document.getElementById("ctFichasBig");
-
-                function mostrarKilledCoder() {
-                    console.log("ctFichasBig");
-                    ficha.style.display = "flex";
+               /*  mostrarKilledCoder(); */
+ 
                 }
 
-            };
+            });
         });
-    });
-};
+    };
 
-oscurecerRandom(codersList)
+
+oscurecerRandom(codersList);
+
+/* 
+let ficha = document.getElementById("ctFichasBig");
+
+  function mostrarKilledCoder() {
+    console.log("ctFichasBig");
+    ficha.style.display = "flex";
+}; */
+
