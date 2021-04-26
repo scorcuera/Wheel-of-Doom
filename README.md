@@ -17,8 +17,8 @@ The goal of the Wheel of Doom is to create a fair and random sacrifice selection
 ***
 The design was made with figma after searching references, we wanted a videogame with old style circus characters and with some felling of terror because it is a game of killing players. 
 
-![Mobile](./img/)
-![Tablet](./img/)
+![Mobile](./img/Figma_Mobil.jpg)
+![Tablet](./img/Figma_Tablet.jpg)
 ![Desktop](./img/)
 
 ## Technologies (a terminar)

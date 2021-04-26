@@ -42,12 +42,13 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: top;
     width: 100vw;
-    height: 70vh;
+    height: 90vh;
     position: absolute;
     z-index: 3;
     overflow: scroll;
+    left:0;
 }
 
 .ctCoders {
@@ -81,8 +82,8 @@ h2 {
 .nombreBig {
     position: absolute;
     z-index: 2;
-    font-size: 50vw;
-    top: vh;
+    font-size: 13vw;
+    top:2vh;
 }
 
 .freakCoder {
