@@ -27,4 +27,4 @@ function oscurecerRandom(array) {
 
 
 oscurecerRandom(codersList)
-console.log (ctCodersbig)
+console.log(ctCodersBig)
