@@ -7,7 +7,10 @@ function printCoders(array) {
     array.forEach(item => {
         codersPrinted += `<div class="ctCoders" data-set="${item.id}"><h2>${item.name}</h2>
     <img src="${item.img}" alt="freakCoder" class="freakCoder">
-    <img src="img/telonCoders.jpg" alt="stage" class="stage"></div>`
+    <img src="img/telonCoders.jpg" alt="stage" class="stage">
+    <img src="img/barril.png" alt ="barril" class="barril">
+    <img src="img/sangre.png" alt ="sangre" class="sangre">
+    </div>`
     });
 
     document.querySelector(".ctFichas").innerHTML = codersPrinted;
