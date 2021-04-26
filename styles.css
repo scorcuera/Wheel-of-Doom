@@ -37,6 +37,19 @@ h1 {
     overflow: scroll;
 }
 
+.ctFichasBig {
+    background: linear-gradient(180deg, #C70100 0%, #F54A02 78.82%, #C70100 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    position: absolute;
+    z-index: 3;
+    overflow: scroll;
+}
+
 .ctCoders {
     display: flex;
     width: 15vw;
@@ -51,10 +64,11 @@ h1 {
 }
 
 .ctCodersBig {
-    position: absolute;
-    z-index: 1;
-    width: 80vw;
-    height: 100vh;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
 }
 
 h2 {
@@ -62,6 +76,13 @@ h2 {
     z-index: 2;
     font-size: 1.5vw;
     top: 0.5vh;
+}
+
+.nombreBig {
+    position: absolute;
+    z-index: 2;
+    font-size: 50vw;
+    top: vh;
 }
 
 .freakCoder {
@@ -80,8 +101,10 @@ h2 {
 
 .stageBig {
     position: absolute;
-    width:100vw;
-    height: 100vh;
+    z-index: 1;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
     justify-content: center;
 }
 
