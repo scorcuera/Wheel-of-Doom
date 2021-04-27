@@ -1,10 +1,10 @@
 import { codersList } from "./data.js";
 
-
 let btMatar = document.querySelector(".btMatar");
 let contenedores = document.querySelectorAll(".ctCoders");
 
 btMatar.addEventListener("click", () => {
+    playSound(audioMatar, fuenteMatar);
     for (let i = 0; i < 10; i++) {
         setTimeout(function() {
             darkenCoder(codersList);
@@ -14,6 +14,7 @@ btMatar.addEventListener("click", () => {
     setTimeout(function() {
         chooseCoder(codersList);
     }, 5000);
+
 });
 
 
@@ -45,3 +46,11 @@ function chooseCoder(array) {
         };
     });
 };
+
+let audioMatar = document.querySelector(".audioMatar");
+let fuenteMatar = audioMatar.src;
+
+function playSound(audio, fuente) {
+    audio.setAttribute("src", fuente);
+    audio.play();
+}
