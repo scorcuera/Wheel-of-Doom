@@ -1,29 +1,56 @@
 import { codersList } from "./data.js";
 
-let btMatar = document.querySelector(".btMatar")
+let btMatar = document.querySelector(".btMatar");
+let contenedores = document.querySelectorAll(".ctCoders");
+
+btMatar.addEventListener("click", () => {
+    playSound(audioMatar, fuenteMatar);
+    for (let i = 0; i < 10; i++) {
+        setTimeout(function() {
+            darkenCoder(codersList);
+        }, 500 * i)
+    };
+
+    setTimeout(function() {
+        chooseCoder(codersList);
+    }, 5000);
+
+});
 
 
-function oscurecerRandom(array) {
-    btMatar.addEventListener("click", () => {
-        let random = Math.floor(Math.random() * array.length)
-        let randomId = array[random].id;
 
-        let contenedores = document.querySelectorAll(".ctCoders")
 
-        array.map(item => {
-            if (item.id == randomId) {
-                let indice = array.indexOf(item)
-                console.log(item);
-                array.splice(indice, 1)
-                console.log(array)
-
-                contenedores[randomId].classList.add('ctCodersSelected');
-                /* contenedores[randomId].classList.add('ctCodersBig', 'stageBig'); */
-
-            };
-        });
-    });
+function darkenCoder(array) {
+    let random = Math.floor(Math.random() * array.length);
+    let randomId = array[random].id;
+    array.filter(item => {
+        if (item.id == randomId) {
+            contenedores[randomId].classList.add('ctCodersSelected');
+        }
+        setTimeout(function() {
+            contenedores[randomId].classList.remove('ctCodersSelected');
+        }, 200);
+    })
 };
 
 
-oscurecerRandom(codersList)
+function chooseCoder(array) {
+    let random = Math.floor(Math.random() * array.length);
+    let randomId = array[random].id;
+    array.map(item => {
+        if (item.id == randomId) {
+            let indice = array.indexOf(item);
+            contenedores[randomId].classList.add('ctCodersSelected');
+            array.splice(indice, 1);
+            console.log(array);
+        };
+    });
+};
+
+let audioMatar = document.querySelector(".audioMatar");
+let fuenteMatar = audioMatar.src;
+
+function playSound(audio, fuente) {
+    audio.setAttribute("src", fuente);
+    audio.play();
+}

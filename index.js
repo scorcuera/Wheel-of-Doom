@@ -1,6 +1,5 @@
 import { codersList } from "./data.js";
 
-
 function printCoders(array) {
     let codersPrinted = "";
     array.forEach(item => {
@@ -14,4 +13,4 @@ function printCoders(array) {
 
 printCoders(codersList);
 
-export { printCoders };
+export { printCoders }
