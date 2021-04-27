@@ -65,7 +65,7 @@ h1 {
     filter: brightness(50%);
 }
 
-.ctCodersBig {
+.freakCoderBig {
     position: relative;
     z-index: 2;
     align-items: center;
@@ -80,7 +80,7 @@ h2 {
     top: 0.5vh;
 }
 
-.nombreBig {
+.DeadName {
     position: absolute;
     z-index: 2;
     font-size: 13vw;
@@ -102,12 +102,15 @@ h2 {
 }
 
 .stageBig {
-    position: absolute;
-    z-index: 1;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    top: -200px;;
     width: 100vw;
-    height: 70vh;
-    justify-content: center;
+    height: auto;
+    position: absolute;
+    z-index: ;
+    overflow: scroll;
 }
 
 footer {
