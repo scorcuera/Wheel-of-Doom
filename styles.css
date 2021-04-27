@@ -35,7 +35,7 @@ h1 {
     width: 100vw;
     height: 70vh;
     overflow: scroll;
-    position:absolute
+    position:absolute;
 }
 
 .ctFichasBig {
@@ -126,5 +126,6 @@ footer {
     font-family: 'Rye', cursive;
     font-size: 1.7rem;
     margin: 3%;
-    position: absolute;
+    position: relative;
+    
 }

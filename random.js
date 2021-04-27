@@ -1,8 +1,5 @@
 import { codersList } from "./data.js";
 
-
-//Funcion para selecionar aleatoriamente el coder a morir
-
 let btMatar = document.querySelector(".btMatar")
 
 function oscurecerRandom(array) {
