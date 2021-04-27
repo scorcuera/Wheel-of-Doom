@@ -45,11 +45,10 @@ h1 {
     justify-content: space-around;
     align-items: center;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     position: relative;
-    z-index: 1;
+    z-index: ;
     overflow: scroll;
-   
 }
 
 .ctCoders {
@@ -66,8 +65,9 @@ h1 {
 }
 
 .ctCodersBig {
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    display: flex;
+    z-index: ;
     align-items: center;
     width: 100vw;
     height: 70vh;
@@ -80,9 +80,9 @@ h2 {
     top: 0.5vh;
 }
 
-.nombreBig {
+.deadName {
     position: absolute;
-    z-index: 2;
+    z-index: ;
     font-size: 13vw;
     top:2vh;
 }
@@ -103,7 +103,7 @@ h2 {
 
 .stageBig {
     position: absolute;
-    z-index: 1;
+    z-index: ;
     align-items: center;
     width: 100vw;
     height: 70vh;
@@ -113,7 +113,7 @@ h2 {
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    position: absolute;
 }
 
 .bt {
