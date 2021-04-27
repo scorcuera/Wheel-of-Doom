@@ -13,7 +13,7 @@
 
 The goal of the Wheel of Doom is to create a fair and random sacrifice selection system for coders, like a videogame, for to kill players. It's responsive and made with html, css and with a minimum of 4 functions of javascript.
 
-## Design (a terminar)
+## Design 
 ***
 The design was made with figma after searching references, we wanted a videogame with old style circus characters and with some felling of terror because it is a game of killing players. 
 

@@ -1,10 +1,20 @@
-//let ficha = document.getElementById("ctFichas");
+/* import { randomId } from ".random.js";
 
-//function mostrarKilledCoder() {
-//    console.log("hola");
-//    ficha.style.display = "flex";
-//}
+  
+//Funcion para traer el imagen random muerto y configurar HTML
+function printCoderKilled (randomId) {
+    let coderPrintedKilled = "";
+    array.forEach(item => {
+        coderPrintedKilled += `<div class ="ctFichasBig" data-set="${randomId.id}"><h2>${randomId.name}</h2>
+    <img src="${randomId.img}" alt="ctFichasBig" class="ctFichasBig">
+    <img src="img/telonCoders.jpg" alt="stageBig" class="stageBig"></div>`
+    });
 
-function regresar() {
-    ficha.style.display = "none";
-}
+    document.querySelector("ctFichasBig").innerHTML = coderPrintedKilled
+};
+
+printCoderKilled(randomId);
+
+export {printCoderKilled}
+ */
+
