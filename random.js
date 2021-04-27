@@ -3,48 +3,44 @@ import { codersList } from "./data.js";
 
 //Funcion para selecionar aleatoriamente el coder a morir
 
-        let btMatar = document.querySelector(".btMatar")
-        function oscurecerRandom(array) {
+let btMatar = document.querySelector(".btMatar")
+
+function oscurecerRandom(array) {
         btMatar.addEventListener("click", () => {
         let random = Math.floor(Math.random() * array.length)
         let randomId = array[random].id;
 
         let contenedores = document.querySelectorAll(".ctCoders")
-        console.log(contenedores[randomId])
 
-        let contenedorKilled = contenedores[randomId]
-        contenedorKilled.classList.add('ctFichasBig')
-
-
-//Funcion para eliminar exactamente el coder selecionado manteniendo el indice de los elementos
-
-array.map(item => {
-    if (item.id == randomId) {
-        let indice = array.indexOf(item);
-        console.log(item);
-        array.splice(indice, 1);
-        console.log(array);
-
-        contenedores[randomId].classList.add('ctCodersSelected');
-        };
-        )};
+        let coderPaint = contenedores[randomId]
+        paintCoder(coderPaint)
     
+        array.map(item => {
+            if (item.id == randomId) {
+            let indice = array.indexOf(item);
+            console.log(item);
+            array.splice(indice, 1);
+            console.log(array);
 
- //Funcion para cambiar de pantalla el coder muerto y Regresar al juego
+            contenedores[randomId].classList.add('ctCodersSelected');
+            };
+        });
+    }); 
+};
+      
+oscurecerRandom(codersList)
 
-       let ficha = document.getElementById("ctFichasBig");
+function paintCoder(coderPaint){
+    let contenedores = document.querySelector(".ctFichas")
+    let stageContainer = coderPaint.querySelector(".stage")
+    let freakCoder = coderPaint.querySelector(".freakCoder")
+    let freakName = coderPaint.querySelector("h2")
 
-        function mostrarKilledCoder() {
-            console.log("");
-            ficha.style.display = "flex";
-         }
-        
-         function regresar() {
-            ficha.style.display = "none";
-        }
-        }   
+    contenedores.classList.add("ctFichasBig")
+    stageContainer.classList.add("stageBig")
+    freakCoder.classList.add("freakCoderBig")
+    freakName.classList.add("deadName")
+    
+    console.log(coderPaint);
+    }
 
-
-oscurecerRandom(codersList);
-mostrarKilledCoder();
-regresar();
