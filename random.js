@@ -27,13 +27,13 @@ function oscurecerRandom(array) {
       
 oscurecerRandom(codersList)
 
-function paintCoder(coderPaint){
-    let contenedores = document.querySelector(".ctFichas")
+function paintCoder(coderPaint) {
+   
     let stageContainer = coderPaint.querySelector(".stage")
     let freakCoder = coderPaint.querySelector(".freakCoder")
     let freakName = coderPaint.querySelector("h2")
 
-    contenedores.classList.add("ctFichasBig")
+    
     stageContainer.classList.add("stageBig")
     freakCoder.classList.add("freakCoderBig")
     freakName.classList.add("deadName")
