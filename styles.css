@@ -38,20 +38,6 @@ h1 {
     position:relative;
 }
 
-.ctFichasBig {
-    background: linear-gradient(180deg, #C70100 0%, #F54A02 78.82%, #C70100 100%);
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-    height: auto;
-    position: relative;
-    z-index: 4;
-    overflow: scroll;
-}
-
 .ctCoders {
     display: flex;
     width: 15vw;
@@ -62,20 +48,13 @@ h1 {
 }
 
 .ctCodersSelected {
-    filter: brightness(50%);
     position: absolute;
     top:0%;
     height: 80vh;
     z-index: 10;
 }
 
-.freakCoderBig {
-    position: absolute;
-    z-index: ;
-    align-items: center;
-    width: 50%;
-    height: auto;
-}
+
 
 h2 {
     position: absolute;
@@ -97,6 +76,15 @@ h2 {
     height: auto;
     top: 5vw;
     z-index: 1;
+}
+
+.freakCoderBig {
+    position: absolute;
+    z-index: 11;
+    align-items: center;
+    width: 70vw;
+    height: auto;
+    top: 25%;
 }
 
 .stage {
