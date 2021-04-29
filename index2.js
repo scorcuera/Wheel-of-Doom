@@ -1,19 +1,20 @@
-/* import { codersList } from "./data.js";
+/* import { randomId } from ".random.js";
 
-console.log(codersList)
-
-//Funcion para traer la persona seleccionada y que le caiga el barril y la sangre
-function randomCodersPrinted (array) {
-    let randomCodersPrinted = "";
-    array.forEach(randomId => {
-        randomCodersPrinted += `<div class="ctCodersBig" data-set="${randomId.id}"><h2>${randomId.name}</h2>
-    <img src="${randomId.img}" alt="ctCodersBig" class="ctCodersBig">
-    <img src="img/telonCoders.jpg" alt="stage" class="stage"></div>`
+  
+//Funcion para traer el imagen random muerto y configurar HTML
+function printCoderKilled (randomId) {
+    let coderPrintedKilled = "";
+    array.forEach(item => {
+        coderPrintedKilled += `<div class ="ctFichasBig" data-set="${randomId.id}"><h2>${randomId.name}</h2>
+    <img src="${randomId.img}" alt="ctFichasBig" class="ctFichasBig">
+    <img src="img/telonCoders.jpg" alt="stageBig" class="stageBig"></div>`
     });
 
-    document.querySelector(".ctFichas").innerHTML = randomCodersPrintedd;
+    document.querySelector("ctFichasBig").innerHTML = coderPrintedKilled
 };
 
-randomCodersPrinted (codersList);
+printCoderKilled(randomId);
 
-export {randomCodersPrinted} */
+export {printCoderKilled}
+ */
+
