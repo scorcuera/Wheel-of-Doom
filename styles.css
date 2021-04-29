@@ -59,8 +59,8 @@ h1 {
     width: 97%;
     height: 97%;
     margin: 0 ;
+   
 }
-
 
 
 h2 {
@@ -75,7 +75,7 @@ h2 {
     top: 4%;
     z-index: 3;
     font-size: 3rem;
-    animation: delay;
+    animation: shade;
     animation-delay: 0s;
     animation-duration: 3s;
    
@@ -142,10 +142,6 @@ h2 {
         top: -200%;
        
     }
-
-    50%{
-     
-    }
     100%{
         top: 0%;
     }
@@ -197,6 +193,9 @@ h2 {
     width: 70vw;
     height: auto;
     top: 25%;
+    animation: shade;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
 }
 
 .stage {
@@ -214,7 +213,24 @@ h2 {
     height: auto;
     position: absolute;
     z-index: 1;
+    animation: shade;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
 }
+
+@keyframes shade {
+    0%{
+        opacity: 0;
+    }
+    50%{
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
 
 footer {
     display: flex;

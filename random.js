@@ -29,13 +29,13 @@ function paintCoder(coderPaint) {
    
     let stageContainer = coderPaint.querySelector(".stage")
     let freakCoder = coderPaint.querySelector(".freakCoder")
-    let freakName = coderPaint.querySelector("h2")
+    let deadName = coderPaint.querySelector("h2")
     let barril = coderPaint.querySelector(".barril")
     let telon = coderPaint.querySelector(".telon")
     
     stageContainer.classList.add("stageBig")
     freakCoder.classList.add("freakCoderBig")
-    freakName.classList.add("deadName")
+    deadName.classList.add("deadName")
     barril.classList.add("barrilActivated")
     telon.classList.add("telonClose")
     
@@ -43,7 +43,7 @@ function paintCoder(coderPaint) {
     }
 
 
-oscurecerRandom(codersList)
+
 /* 
 function paintCoder(coderToPaint){
     let bigContainer = document.querySelector(".ctFichas")
