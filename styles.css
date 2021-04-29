@@ -38,6 +38,11 @@ h1 {
     position:relative;
 }
 
+.ctFichasBig {
+    position: relative;
+    
+}
+
 .ctCoders {
     display: flex;
     width: 15vw;
@@ -49,27 +54,135 @@ h1 {
 
 .ctCodersSelected {
     position: absolute;
-    top:0%;
-    height: 80vh;
-    z-index: 10;
+    display: flex;
+    z-index: 2;
+    width: 97%;
+    height: 97%;
+    margin: 0 ;
 }
 
 
 
 h2 {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     font-size: 1.5vw;
     top: 0.5vh;
 }
 
-.deadName {
+.deadName{
     position: absolute;
-    z-index: 2;
-    font-size: 13vw;
-    top:2vh;
+    top: 4%;
+    z-index: 3;
+    font-size: 3rem;
+    animation: delay;
+    animation-delay: 0s;
+    animation-duration: 3s;
+   
 }
 
+.barril {
+    display: none;
+}
+
+.barrilActivated{
+    position:absolute;
+    display: block;
+    width:75%;
+    height:75%;
+    z-index: 20;
+    top: 20%;
+    animation: fall;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fall {
+    0%{
+        top: -100%;
+    }
+    50%{
+        top: -90%;
+    }
+    60%{
+        top:19.9%;
+    }
+    100%{
+        top: 20%;
+    }
+}
+.telon{
+    display: none;
+    width: 95vw;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+   
+}
+
+.telonClose {
+    display:block;
+    width: 95vw;
+    height: auto;
+    position: absolute;
+    top: -120%;
+    z-index: 30;
+    animation: telon;
+    animation-delay: 0s;
+    animation-duration: 8s;
+    animation-timing-function: ease-in;
+    
+}
+
+
+@keyframes telon {
+    0%{
+        top: -220%;
+    }
+    50%{
+        top: -210%;
+    }
+    60%{
+        top:;
+    }
+    100%{
+        top: 0%;
+    }
+}
+/* 
+.sangre{
+    position:absolute;
+    display: block;
+    opacity: 1;
+    width:75%;
+    height:75%;
+    z-index: 3;
+    top: 50%;
+    transform: rotate(250deg);
+    animation: blood ;
+    animation-delay: 0s;
+    animation-duration: 4s;
+
+}
+
+@keyframes blood {
+    0%{
+        opacity: 0;
+    }
+
+    88%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+} */
+ 
 .freakCoder {
     position: absolute;
     width: 75%;
@@ -102,7 +215,6 @@ h2 {
     height: auto;
     position: absolute;
     z-index: 1;
-    overflow: ;
 }
 
 footer {

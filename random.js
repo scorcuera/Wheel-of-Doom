@@ -8,10 +8,8 @@ function oscurecerRandom(array) {
         let randomId = array[random].id;
 
         let contenedores = document.querySelectorAll(".ctCoders")
-
-        let coderPaint = contenedores[randomId]
-        paintCoder(coderPaint)
-    
+        let coderToPaint = contenedores[randomId]
+        paintCoder(coderToPaint)
         array.map(item => {
             if (item.id == randomId) {
             let indice = array.indexOf(item);
@@ -32,12 +30,33 @@ function paintCoder(coderPaint) {
     let stageContainer = coderPaint.querySelector(".stage")
     let freakCoder = coderPaint.querySelector(".freakCoder")
     let freakName = coderPaint.querySelector("h2")
-
+    let barril = coderPaint.querySelector(".barril")
+    let telon = coderPaint.querySelector(".telon")
     
     stageContainer.classList.add("stageBig")
     freakCoder.classList.add("freakCoderBig")
     freakName.classList.add("deadName")
+    barril.classList.add("barrilActivated")
+    telon.classList.add("telonClose")
     
     console.log(coderPaint);
     }
 
+
+oscurecerRandom(codersList)
+/* 
+function paintCoder(coderToPaint){
+    let bigContainer = document.querySelector(".ctFichas")
+    let stageContainer = coderToPaint.querySelector(".stage")
+    let freakCoder = coderToPaint.querySelector(".freakCoder")
+    let freakName = coderToPaint.querySelector("h2")
+    let barril = coderToPaint.querySelector(".barril")
+    bigContainer.classList.add("ctFichasBig")
+    coderToPaint.classList.add("ctCodersBig")
+    stageContainer.classList.add("stageBig")
+    freakCoder.classList.add("freakCoderBig")
+    freakName.classList.add("deadName")
+    barril.classList.add("barrilActivated")
+    console.log(coderToPaint);
+} 
+ */
