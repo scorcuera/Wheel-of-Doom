@@ -1,7 +1,5 @@
 import { codersList } from "./data.js";
 
-
-//Funcion para traer las imagenes y nombres 
 function printCoders(array) {
     let codersPrinted = "";
     array.forEach(item => {
