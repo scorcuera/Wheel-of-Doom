@@ -52,6 +52,15 @@ h1 {
 }
 
 .ctCodersSelected {
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    width: 97%;
+    height: 97%;
+    margin: 0;
+}
+
+.ctCodersDark {
     filter: brightness(50%);
 }
 
@@ -192,6 +201,30 @@ h2 {
     position: absolute;
     width: 15vw;
     height: auto;
+}
+
+.stageBig {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 95vw;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    animation: shade;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+@keyframes shade {
+    0% {
+        opacity: 0;
+    }
+    50% {}
+    100% {
+        opacity: 1;
+    }
 }
 
 footer {
