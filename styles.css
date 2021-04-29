@@ -125,13 +125,13 @@ h2 {
 .telonClose {
     display:block;
     width: 95vw;
-    height: auto;
+    height: 100%;
+    top: 0%;
     position: absolute;
-    top: -120%;
     z-index: 30;
     animation: telon;
     animation-delay: 0s;
-    animation-duration: 8s;
+    animation-duration: 5s;
     animation-timing-function: ease-in;
     
 }
@@ -139,13 +139,12 @@ h2 {
 
 @keyframes telon {
     0%{
-        top: -220%;
+        top: -200%;
+       
     }
+
     50%{
-        top: -210%;
-    }
-    60%{
-        top:;
+     
     }
     100%{
         top: 0%;
