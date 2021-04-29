@@ -35,6 +35,12 @@ h1 {
     width: 100vw;
     height: 70vh;
     overflow: scroll;
+    position:relative;
+}
+
+.ctFichasBig {
+    position: relative;
+    
 }
 
 .ctCoders {
@@ -47,29 +53,149 @@ h1 {
 }
 
 .ctCodersSelected {
-    filter: brightness(50%);
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    width: 97%;
+    height: 97%;
+    margin: 0 ;
+   
 }
 
-.ctCodersBig {
-    position: absolute;
-    z-index: 1;
-    width: 80vw;
-    height: 100vh;
-}
 
 h2 {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     font-size: 1.5vw;
     top: 0.5vh;
 }
 
+.deadName{
+    position: absolute;
+    top: 4%;
+    z-index: 3;
+    font-size: 3rem;
+    animation: shade;
+    animation-delay: 0s;
+    animation-duration: 3s;
+   
+}
+
+.barril {
+    display: none;
+}
+
+.barrilActivated{
+    position:absolute;
+    display: block;
+    width:75%;
+    height:75%;
+    z-index: 20;
+    top: 20%;
+    animation: fall;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fall {
+    0%{
+        top: -100%;
+    }
+    50%{
+        top: -90%;
+    }
+    60%{
+        top:19.9%;
+    }
+    100%{
+        top: 20%;
+    }
+}
+.telon{
+    display: none;
+    width: 95vw;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+   
+}
+
+.telonClose {
+    display:block;
+    width: 95vw;
+    height: 100%;
+    top: 0%;
+    position: absolute;
+    z-index: 30;
+    animation: telon;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    
+}
+
+
+@keyframes telon {
+    0%{
+        top: -200%;
+       
+    }
+    100%{
+        top: 0%;
+    }
+}
+/* 
+.sangre{
+    position:absolute;
+    display: block;
+    opacity: 1;
+    width:75%;
+    height:75%;
+    z-index: 3;
+    top: 50%;
+    transform: rotate(250deg);
+    animation: blood ;
+    animation-delay: 0s;
+    animation-duration: 4s;
+
+}
+
+@keyframes blood {
+    0%{
+        opacity: 0;
+    }
+
+    88%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+} */
+ 
 .freakCoder {
     position: absolute;
     width: 75%;
     height: auto;
     top: 5vw;
     z-index: 1;
+}
+
+.freakCoderBig {
+    position: absolute;
+    z-index: 11;
+    align-items: center;
+    width: 70vw;
+    height: auto;
+    top: 25%;
+    animation: shade;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
 }
 
 .stage {
@@ -79,11 +205,32 @@ h2 {
 }
 
 .stageBig {
-    position: absolute;
-    width:100vw;
-    height: 100vh;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
     justify-content: center;
+    width: 95vw;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    animation: shade;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
 }
+
+@keyframes shade {
+    0%{
+        opacity: 0;
+    }
+    50%{
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
 
 footer {
     display: flex;
@@ -101,4 +248,6 @@ footer {
     font-family: 'Rye', cursive;
     font-size: 1.7rem;
     margin: 3%;
+    position: relative;
+    
 }
