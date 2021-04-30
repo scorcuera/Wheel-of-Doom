@@ -13,21 +13,21 @@
 
 The goal of the Wheel of Doom is to create a fair and random sacrifice selection system for coders, like a videogame, for to kill players. It's responsive and made with html, css and with a minimum of 4 functions of javascript.
 
-## Design (a terminar)
+## Design 
 ***
 The design was made with figma after searching references, we wanted a videogame with old style circus characters and with some felling of terror because it is a game of killing players. 
 
-![Mobile](./img/)
-![Tablet](./img/)
-![Desktop](./img/)
+![Mobile](./img/Figma_Mobil.JPG)
+![Tablet](./img/Figma_Tablet.JPG)
+![Desktop](./img/Desktop.JPG)
 
-## Technologies (a terminar)
+## Technologies
 ***
-We use html, css and javascript, we split the content in two big sections, the header and the main, and a small third section for footer, for css the header was based in flex and for catalogue with grid. The classes has a prefix that show us the kind of element it is. For images the prefix is "img" and followed the name in camelCase for example "imgLogo", for buttons "bt", for containers "ct", for text "txt".
+We use html, css and javascript. In this project we used some JS functions and one of them is the construction of HTML which made it simpler. We use functions to kill a coder and eliminate it from the game, relive it, restart the game ... We used new css functions like animations with sound. It is responsive and was developed with a focus on mobile. We have made a TDD of the function to randomly select a player and eliminate him.
 
-## To do (a terminar)
+## To do
 ***
-The responsive was missing because we didn't have the time it takes.
+Some points were missing because we give priority to better understand the functions and make the game work. It is missing to make a bucle for the game to continue and responsive for Desktop.
 
 ## Collaborators
 ***

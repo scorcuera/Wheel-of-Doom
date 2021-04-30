@@ -8,6 +8,7 @@
     <title>Wheel of Doom</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
@@ -15,13 +16,25 @@
         <h1>EL BOOTCAMP DEL HORROR</h1>
         <img src="img/banner.png" alt="bannerText" class="imgBanner">
     </header>
-    <main class="ctFichas"></main>
+
+    <main class="ctFichas">
+    </main>
+
     <footer>
         <button class="bt btMatar">MATAR CODER</button>
-        <button class="bt">REVIVIR CODERS</button>
+        <audio src="./sounds/INTRO 01 8-bits rev.mp3" class="audioMatar"></audio>
+        <audio src="./sounds/ES_Voice Clip Male 303 - SFX Producer.mp3" class="audioGrito"></audio>
+        <audio src="./sounds/ES_Impact Wood Smash - SFX Producer.mp3" class="audioBarril"></audio>
+        <audio src="./sounds/Cortina01fin.mp3" class="audioCortina"></audio>
+        <button class="bt btReload">REVIVIR CODERS</button>
     </footer>
+
+
     <script type="module" src="./index.js"></script>
     <script type="module" src="./random.js"></script>
+    <script type="module" src="./reload.js"></script>
+    <!-- <script type="module" src="./index2.js"></script> -->
+
 </body>
 
 </html>

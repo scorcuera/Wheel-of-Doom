@@ -1,0 +1,83 @@
+        @media screen and (max-width: 375px) {
+            .bt {
+                width: 245px;
+                height: 29px;
+                border-radius: 9px;
+                font-size: 1.2rem;
+                margin: 2%;
+            }
+            .ctFichas {
+                height: 73vh;
+            }
+            .imgBanner {
+                width: 91vw;
+            }
+            h1 {
+                font-size: 5vw;
+                top: 23%;
+            }
+        }
+        
+        @media screen and (min-width: 768px) {
+            .ctCoders {
+                width: 16vw;
+                margin: 1% 1% 15% 0%;
+            }
+            .stage {
+                width: 9vw;
+            }
+            .freakCoder {
+                width: 44%;
+                top: 3vw
+            }
+            h2 {
+                font-size: 1vw;
+            }
+            footer {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        
+        @media screen and (min-width: 1200px) {
+            body {
+                margin: 1%;
+            }
+            .imgBanner {
+                width: 40vw;
+            }
+            h1 {
+                font-size: 2.2vw;
+                left: 3.5%;
+            }
+            header {
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            .ctFichas {
+                width: 40vw;
+                height: 73vh;
+            }
+            .ctCoders {
+                width: 7vw;
+                margin: 1% 1% 18% 0%;
+            }
+            .stage {
+                width: 5vw;
+            }
+            h2 {
+                top: 0.7vh;
+                font-size: 0.4vw;
+            }
+            footer {
+                align-items: flex-start;
+                width: 40vw;
+            }
+            .bt {
+                width: 320px;
+                height: 40px;
+                border-radius: 17px;
+                font-size: 1.3rem;
+                margin: 5% 4% 4% 4%;
+            }
+        }
