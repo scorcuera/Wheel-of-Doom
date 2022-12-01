@@ -4,7 +4,6 @@ let btMatar = document.querySelector(".btMatar");
 let contenedores = document.querySelectorAll(".ctCoders");
 
 function paintCoder(coderPaint) {
-
     let stageContainer = coderPaint.querySelector(".stage")
     let freakCoder = coderPaint.querySelector(".freakCoder")
     let deadName = coderPaint.querySelector("h2")
@@ -28,7 +27,6 @@ btMatar.addEventListener("click", () => {
             darkenCoder(codersList);
         }, 500 * i)
     };
-
     setTimeout(function() {
         chooseCoder(codersList);
     }, 5000);
@@ -43,11 +41,15 @@ function darkenCoder(array) {
     let randomId = array[random].id;
     array.filter(item => {
         if (item.id == randomId) {
-            contenedores[randomId].classList.add('ctCodersDark');
+            [...contenedores].filter(el => {
+                if(el.dataset.set == randomId){
+                    el.classList.add('ctCodersDark');
+                }
+                setTimeout(function() {
+                    el.classList.remove('ctCodersDark');
+                }, 200);
+            });
         }
-        setTimeout(function() {
-            contenedores[randomId].classList.remove('ctCodersDark');
-        }, 200);
     })
 };
 
